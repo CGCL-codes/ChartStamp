@@ -12,7 +12,7 @@ from tensorflow.python.saved_model import tag_constants
 from tensorflow.python.saved_model import signature_constants
 
 slim = tf.contrib.slim
-sys.path.append(r"./EAST")
+sys.path.append(r"./detect_model")
 from model import East
 from eval import predict_one
 
@@ -54,6 +54,7 @@ def main():
     parser.add_argument('--model', type=str, default='./saved_models/save_100')
     parser.add_argument('--image', type=str, default=None)
     parser.add_argument('--images_dir', type=str, default='./100bit_Display_Captured')
+    parser.add_argument('--detect_model_path', type=str, default='./detect_model/weight_noise7/epoch_75_checkpoint.pth')
     args = parser.parse_args()
 
     if args.image is not None:
@@ -75,8 +76,7 @@ def main():
         'decoded'].name
     output_secret = tf.get_default_graph().get_tensor_by_name(output_secret_name)
 
-    EAST_checkpoint = './EAST/weight_noise7/epoch_75_checkpoint.pth'
-    EAST_model = load_EAST_model(EAST_checkpoint)
+    EAST_model = load_EAST_model(args.detect_model_path)
 
     bch = bchlib.BCH(BCH_POLYNOMIAL, BCH_BITS)
 
