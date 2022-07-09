@@ -13,6 +13,9 @@ Our code is implemented and tested on TensorFlow with the following packages and
 - `pillow=8.1.0`
 - `numpy=1.18.5`
 
+Run detect_decode.py, we use additional packages:
+- `pytorch=1.7.1`
+
 ## Training
 - Set dataset path in train.py
 
