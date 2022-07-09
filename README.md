@@ -14,6 +14,7 @@ Our code is implemented and tested on TensorFlow with the following packages and
 - `numpy=1.18.5`
 
 ## Training
+- Set dataset path in train.py
 
 ## Citation
 
