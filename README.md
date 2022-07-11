@@ -18,7 +18,7 @@ Run detect_decode.py, additional package is needed:
 
 ## Training
 - Set dataset path in train.py
-- run train.py
+- `python train.py`
 
 
 ## Citation
