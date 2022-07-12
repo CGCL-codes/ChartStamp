@@ -30,10 +30,10 @@ If you are using our code for research purpose, please cite our paper.
   author    = {Jiayun Fu, Bin B. Zhu, Haidong Zhang, Yayi Zou1, Song Ge, Weiwei Cui, Yun Wang,
 Dongmei Zhang, Xiaojing Ma and Hai Jin1},
   title     = {ChartStamp: Robust Chart Embedding for Real-World Applications},
-  booktitle = {2022 ACM Multimedia 2022},
+  booktitle = {In Proceedings of the 30th ACM International Conference on Multimedia (MM ’22), October 10–14, 2022, Lisboa, Portugal. ACM, New York, NY, USA, 9 pages.},
   publisher = {{ACM}},
   year      = {2022},
-  url       = {}
+  url       = {https://doi.org/10.1145/3503161.3548286}
 }
 ```
 
