@@ -176,7 +176,7 @@ def main():
         saver.restore(sess, args.pretrained)
 
     total_steps = len(files_list)//args.batch_size + 1
-    global_step = 6000
+    global_step = 0
 
     csvFile = open('./log_result.csv', 'a', newline='')
     writer = csv.writer(csvFile)
